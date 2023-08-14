@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision</title>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h2>가상 선택자</h2>
+    <div>= 하이퍼링크에 스타일 부여 (둘 이상 선택시 순서 중요)</div>
+    <ul>
+        <li>a:link = 링크 걸린 상태</li>
+        <li>tag:visited = 방문한 링크</li>
+        <li>tag:hover = mouse on</li>
+        <li>tag:active = 왼쪽 마우스 누르고 있을 시 (클릭하고 있을 떼)</li>
+        <li>tag:focus = 입력 상태에 커서가 있을 떼 (탭으로 선택시)</li>
+    </ul>
+    <ul>
+        <li>tabindex="-1" : tab 건너뜀 (중요도 X)</li>
+        <li>tabindex="0" : tab O (default)</li>
+        <li>tabindex-="1" : tab O (우선순위)</li>
+    </ul>
+    <h2>가상요소 선택자</h2>
+    <ul>
+        <li>::first-letter = 첫번째 글자</li>
+        <li>::first-child = 첫 요소</li>
+        <li>::last-child = 마지막 요소</li>
+        <li>:before = 태그 안에 자식으로 추가(앞에, 메뉴에 많고 액티비티 효과 많음)</li>
+        <li>:after = 뒤에 추가</li>
+    </ul>
+    <ul>
+        <li>nth-child(n) = 부모 모든 자식 요소 중 몇 번째</li>
+            <ul>
+                <li>tag가 뭐든 그냥 하위요소 중 하나</li>
+                <li>.box&gt;:nth-child(n){}</li>
+            </ul>
+        <li>nth-type-of(n) = 하위 중 특정 태그만
+            <ul>
+                <li>.box&gt;span:nth-of-type(n){}</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

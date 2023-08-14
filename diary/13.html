@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div</title>
+</head>
+<body>
+    <h1>Div</h1>
+    <div>= 아무 의미 X (tag 보다 큰 영역 의미)</div>
+    <ul>
+        <li>이만큼을 묶겠다 (블럭) = 모양 잡을 때</li>
+        <li>유일하게 블럭 가질 수 O</li>
+    </ul>
+    <ul>
+        <li>#container : 구조가 단 하나 / java script와 연동할 것</li>
+        <li>nav>ul>list</li>
+        <li>&lt;section&gt; : 꼭 "h태그" 필수</li>
+            <ul>
+                <li>주요 컨텐츠 묶음</li>
+            </ul>
+    </ul>
+    <hr>
+    <h2>* Example *</h2>
+    <section>
+        <h1>예약문의</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <p>작성자 : <input type="text" placeholder="작성자를 입력하세요" required="required"></p>
+                <p>비밀번호 : <input type="password" name="userPW" id="userPW" value="userPW"></p>
+                <p>주민등록번호 : <input type="text" name="userID" id="userID" pattern="\d{6}-\d{7}"></p>
+                <p>이메일 : <input type="email" name="userEM" id="userEM"></p>
+                <p>연락처 : <input type="tel" name="userPhone" id="userPhone" autocomplete="on"></p>
+                <p>투숙 날짜 : <input type="date" name="userDate" id="userDate"></p>
+            </fieldset>
+        </form>
+        <hr>
+        <input type="submit" value="제출">
+    </section>
+</body>
+</html>

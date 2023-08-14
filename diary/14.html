@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDML audio/video + CSS selector</title>
+    <style>
+        header{background-color: lightblue; width: 200px; height: 200px; line-height: 200px; justify-content: space-between; align-items: end;}
+        nav>ul{background-color: lightcoral; list-style: none; width: 400px; display: flex;}
+        nav>ul>li{display: flex; list-style: none; width: 400px; justify-content: center;}
+        section{background-color: lightgray; width: 200px; height: 300px; line-height: 300px;}
+        div>article, aside{background-color: lightgoldenrodyellow; width: 150px; height: 150px; text-align: center; line-height: 150px;}
+        footer{background-color: lightgreen; width: 600px; padding: 5px; margin-left: 100px; margin-right: 5px;}
+        #container{display: flex; justify-content: space-between;}
+        #nav{display: flex; justify-content: space-between; align-items: end;}
+        #body{width: 700px;}
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+    <h2>- Audio</h2>
+    <ul>
+        <li>controls : 재생바 생성</li>
+        <li>autoplay : 자동재생</li>
+        <li>loop : 연속재생</li>
+    </ul>
+    <ul>
+        <li>audio&gt;source : for 구형 웹브라우저</li>
+            <ul style="list-style-type: none;">
+                <li>&lt;audio width:"" controls&gt;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src=""&gt;</li>
+            </ul>
+    </ul>
+    <h2>- Video</h2>
+    <ul>
+        <li>poster : 썸네일</li>
+        <li>video width / height : 단위 X (단위 쓰면 px이 아닌 배 개념)</li>
+        <li>video&gt;source : 다른 파일형식 지원</li>
+        <li>autoplay muted : muted 따라와야함</li>
+    </ul>
+    <h3>+ subtitle</h3>
+    <div>: video&gt;source+track</div>
+    <ul>
+        <li><b>src</b>="" kind="subtitles" <b>srclang</b>="ko(/en)" <b>label</b>="korean(/english) <b>default</b></li>
+            <ul>
+                <li>src : 파일 경로</li>
+                <li>kind : subtitles</li>
+                <li>srclang : language</li>
+                <li>label : 자막 설정 열었을 때 설정값</li>
+                <li>default : 기본값으로 설정</li>
+            </ul>
+    </ul>
+    <div>WEBVTT FILE<br><br>00:00:00.000--&gt;00:00:00.000<br>subtitle content</div>
+    <h2>iframe</h2>
+    <div>= html에서 html 불러오기</div>
+    <h3>+ nav 통한 iframe</h3>
+    <ul>
+        <li>nav&gt;ul&gt;li</li>
+            <ul>
+                <li>&lt;nav&gt;/&lt;ul&gt;/&lt;li&gt;&lt;a href="#" <b>target</b>="<mark>***</mark>"&gt;conext&lt;/a&gt;</li><br>&lt;div&gt;/&lt;iframe src="" frameboard="" width="" height="" <b>name</b>="<mark>***</mark>"&gt;
+            </ul>
+    </ul>
+    <div id="body">
+        <h4>* Example *</h4>
+        <div id="nav">
+            <header><a href="#">반응형 웹</a></header>
+            <nav>
+                <ul>
+                    <li><a href="01.html">Menu 1</a></li>
+                    <li><a href="02.html">Menu 2</a></li>
+                    <li><a href="03.html">Menu 3</a></li>
+                    <li><a href="04.html">Menu 4</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="container">
+            <section>
+                <h2>content group 1</h2>
+            </section>
+            <section>
+                <h2>content group 2</h2>
+            </section>
+            <div>
+                <article>
+                    <h2>주요 기사</h2>
+                </article>
+                <aside>광고</aside>
+            </div>
+        </div>
+        <footer>
+            <address>서울시 강남구 논현로 4길 54</address>
+             <p>COPYRIGHT ALL RIGHTS RESERVED.</p>
+    </div>
+    </footer>
+    <h1>CSS</h1>
+    <h2>- 인접선택자</h2>
+    <div>: 가까이 있는 태그 선택</div>
+    <div>= tag+tag{}</div>
+    <h2>- 형제 선택자</h2>
+    <div>: 동위 태그 선택</div>
+    <div>= tag~tag{}</div>
+</body>
+</html>

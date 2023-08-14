@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+    <style>
+        div.opacity{background-color: yellow;}
+        .light{opacity: .2;}
+        .medium{opacity:.6;}
+        .heavy{opacity:0.9;}
+        p.b_img{background-image: url('../07/c04/img/bgimg.png');}
+        p.b_repeat{padding: 100px; background-color: antiquewhite; background-image: url('../07/c04/img/bg_flower.png'); background-repeat: no-repeat;}
+        div.b_p1 li{padding-left: 40px; background-image: url('../07/c04/img/bg_ar.png'); background-repeat: no-repeat; background-position-x: 0%; background-position-y: 100%;}
+        div.b_p1{background: url('../07/c04/img/bg_linepttn.png') repeat-x 0 100%; padding: 20px;}
+        div.b_p2{padding: 20px; background-image: url('../07/c04/img/bg_linepttn.png'); background-position: bottom; background-repeat: repeat-x;}
+        div.b_p2 li{list-style-image: url('../07/c04/img/bg_bullet.png'); padding-left: 20px;}
+        .b_p1 ul,.b_p2 ul{list-style: none;}
+        .bg_fixed{background: url('../07/c04/img/bg_fixed.png') fixed center; min-height: 200px;}
+        .btm{background: #595; min-height: 200px;}
+        .who{height: 150px; margin-bottom: 10px; background: #67758e url('../07/c04/img/bg_size.png') no-repeat;}
+        .who1{background-size: 100px 200px; background-position: left;}
+        .who2{background-size: 150px; background-position: left;}
+        .who3{background-size: 80% 150%; background-position: left;}
+        .who4{background-size: cover;}
+        .who5{background-size: contain;}
+        .b_origin div{width: 550px; padding: 20px; border: 10px double #333; margin-bottom: 10px; background: url('../07/c04/img/bg_origin.png') no-repeat; background-size: 50px;}
+        div.ori1{background-origin: border-box;}
+        div.ori2{background-origin: padding-box;}
+        div.ori3{background-origin: content-box;}
+        .b_clip div{background: lightcoral; border: #333 double 10px; padding: 20px; margin-bottom: 20px;}
+        div.clip1{background-clip: border-box;}
+        div.clip2{background-clip: padding-box;}
+        div.clip3{background-clip: content-box;}
+        .b_sprite ul li{list-style: none; margin: 5px;}
+        .b_sprite ul li a{text-decoration: none; display: block; padding-left: 30px; background: url('../07/c04/img/bg_sprite.png') no-repeat; background-size: 26px; font-size: 25px;}
+        .lnb li:nth-child(1) a{background-position: 0 0; transition: 0.5s;}
+        .lnb li:nth-child(2) a{background-position: 0 -50px;}
+        .lnb li:nth-child(3) a{background-position: 0 -100px;}
+        .lnb li:nth-child(4) a{background-position: 0 -150px;}
+        .lnb li:nth-child(1):hover a{background-position: 0 -50px;}
+        .b_gradient p{padding: 20px;}
+        .b_gradient .g1 {background: red; background: linear-gradient(red, yellow, green);}
+        .b_gradient .g2 {background: linear-gradient(to right, red, yellow, purple, green);}
+        .b_gradient .g3 {background: linear-gradient(to bottom right, red, yellow, green);}
+        .b_gradient .g4 {background: linear-gradient(-200deg, red, yellow, green);}
+        .b_gradient .g5 {background: linear-gradient(to right,rgba(0, 0, 255, 0),rgba(0, 0, 255, 0.8));}
+        .b_gradient .g6 {background: repeating-linear-gradient(brown, yellow 15%, green 30%);}
+        .b_gradient .g7 {background: radial-gradient(red, yellow, green);}
+        .b_gradient .g8 { background: radial-gradient(red 5%, yellow 15%, green 60%);background: radial-gradient(closest-side at 35% 35%,red 5%, yellow 15%,green 60%);}
+        .b_gradient .g9 {background: radial-gradient(circle, red, rgba(0, 0, 255, 0), rgba(0, 0, 255, 0.8) );}
+        .b_gradient .g10 {
+            /* colorzilla generator */
+            background: #e52d77;
+            /* vendor prefix
+              실험적인 기술을 브라우저에서 사용하기 위한 접두어
+              -webkit- : 크롬, 사파리 , 엣지
+              -o-  : 오페라
+              -moz- :  파이어폭스
+              -ms- : 익스
+            */
+            background: -moz-linear-gradient(left, #e52d77 0%, #6b4711 30%, #28d330 51%, #e82559 61%, #c6976b 100%);background: -webkit-linear-gradient(left,#e52d77 0%, #6b4711 30%, #28d330 51%,#e82559 61%, #c6976b 100%);background: linear-gradient(to right,#e52d77 0%, #6b4711 30%,#28d330 51%,#e82559 61%, #c6976b 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e52d77', endColorstr='#c6976b',GradientType=1 );}
+        .b_radial_gradient p{padding: 60px;}
+        .rg1 { background: radial-gradient(closest-side at 35% 35%, red, yellow, green); }
+        .rg2 { background: radial-gradient(closest-corner at 35% 35%, red, yellow, green); }
+        .rg3 { background: radial-gradient(farthest-side at 35% 35%, red, yellow, green); }
+        .rg4 { background: radial-gradient(farthest-corner at 35% 35%, red, yellow, green); }
+        div.b_multiple p {padding: 100px;background-image: url('../07/c04/img/bg_tree.png'), url('../07/c04/img/bg_sun.png'),linear-gradient(to right, rgba(0, 100, 0, 0), rgba(0, 100, 0, 1));background-repeat: no-repeat;background-position: bottom left, 90% 15%;}
+    </style>
+</head>
+<body>
+    <h1>CSS Background</h1>
+    <img src="./이미지 2023. 8. 3. 12.59.JPG" alt="background">
+    <h2>opacity</h2>
+    <div class="opacity">
+        <div class="light">겨우 보이는 글</div>
+        <div class="medium">좀 더 잘 보이는 글</div>
+        <div class="heavy">쉽게 보이는 글</div>
+    </div>
+    <h2>background</h2>
+    <h3>+ background-image</h3>
+    <p class="b_img">
+        어니스트... <br>
+        헤밍웨이가 한때 좌익의 편에 있었다는 것은 몰랐었다. 그는 인간이 위대한 것은 위험을 감수한다는 데 있다고 했다. 사자도 호랑이도 위험을 감수하겠지만 왠지 그 말이 마음에 들었다. 글을 쓰지 못하는 그의 손을 보며 아이러니하게도 쓸게 너무 많은 나는 행복해야겠구나... 싶었다.
+    </p>
+    <h3>+ background-repeat</h3>
+    <p class="b_repeat">
+        장미를 닮은 꽃<br>
+        원예업도 이제는 큰 사업으로 확장되는 경우가 많다. 작은 화분부터 다육 식물에 이르기까지 그 종류도 다양하지만 원래 존재하던 품종만 고집하지 않고 많은 개량종들을 선보이고 있기 때문이다. 이제 원예업은 유전자 공학과도 밀접한 관련을 갖게 되었다. 
+    </p>
+    <h3>+ background-position</h3>
+    <div class="b_p1">
+        <ul>
+            <li>PC 사양 알아보기</li>
+            <li>미니타워와 미들타워의 차이</li>
+            <li>어깨의 통증과 발목의 통증</li>
+        </ul>
+    </div>
+    <div class="b_p2">
+        <ul>
+            <li>PC 사양 알아보기</li>
+            <li>미니타워와 미들타워의 차이</li>
+            <li>어깨의 통증과 발목의 통증</li>
+        </ul>
+    </div>
+    <h3>+ background-attachment</h3>
+    <p class="b_attachment">패션의 완성은 자연이다.<br>멋지고도 순수한 자연만큼 패셔너블한게 있을까! <br>강렬하고 화려해서가 아니라 적절한 시기와 적절한 장소, 그리고 풍요로운 볼거리를 제공해주고 있지 않나.<br>
+        조심스럽게 살펴보면 자연이 보여주고 있는 모든것이 옷이고 장신구, 신발들이다..</p>
+    <p class="bg_fixed"></p>
+    <p class="btm">최고의 패션, 자연을 팝니다... </p>
+    <h3>+ background-size</h3>
+    <div class="who who1"></div>
+    <div class="who who2"></div>
+    <div class="who who3"></div>
+    <div class="who who4"></div>
+    <div class="who who5"></div>
+    <h3>+ background-origin</h3>
+    <div class="b_origin">
+        <div class="ori1">It's impossible not only starting good but also keeping it firm!!</div>
+        <div class="ori2">It's impossible not only starting good but also keeping it firm!!</div>
+        <div class="ori3">It's impossible not only starting good but also keeping it firm!!</div>
+    </div>
+    <h3>+ background-clip</h3>
+    <div class="b_clip">
+        <div class="clip1">It's impossible not only starting good but also keeping it firm!!</div>
+        <div class="clip2">It's impossible not only starting good but also keeping it firm!!</div>
+        <div class="clip3">It's impossible not only starting good but also keeping it firm!!</div>
+    </div>
+    <h3>+ background-color</h3>
+    <h2>sprite image</h2>
+    <div class="b_sprite">
+        <ul class="lnb">
+            <li><a href="#">Theater</a></li>
+            <li><a href="#">Secret Garden</a></li>
+            <li><a href="#">Concert Hall</a></li>
+            <li><a href="#">Animal Farm</a></li>
+        </ul>
+    </div>
+    <h2>gradient</h2>
+    <div class="b_gradient">
+        <p class="g1">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g2">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g3">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g4">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g5">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g6">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g7">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g8">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g9">It's impossible not only starting good but also keeping it firm!!</p>
+        <p class="g10">It's impossible not only starting good but also keeping it firm!!</p>
+    </div>
+    <h2>radial-gradient</h2>
+    <div class="b_radial_gradient">
+        <p class="rg1"></p>
+        <p class="rg2"></p>
+        <p class="rg3"></p>
+        <p class="rg4"></p>
+    </div>
+    <h2>multiple-background</h2>
+    <div class="b_multiple">
+        <p>It's impossible not only starting good but also keeping it firm!!</p>
+    </div>
+</body>
+</html>

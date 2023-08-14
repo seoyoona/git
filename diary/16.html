@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+</head>
+<body>
+    <h1>Cascading</h1>
+    <h2>우선 순위</h2>
+    <ol>
+        <li>요소 내 style 요소</li>
+        <li>head 요소 내 style 요소</li>
+        <li>head 요소 내 style 요소 내 @import 문</li>
+        <li>&lt;link&gt; 로 연결된 css 파일</li>
+        <li>&lt;link&gt; 로 연결된 css 파일 내 @import 문</li>
+        <li>브라우저 디폴트 스타일시트</li>
+    </ol>
+    <h2>명시도</h2>
+    <ol>
+        <li>!imoportant : 최우선</li>
+        <li>inline style : 1000</li>
+        <li>ID : 100</li>
+        <li>Class : 10</li>
+        <li>속성 선택자 : 10</li>
+        <li>가상 클래스 속성 선택자 : 10</li>
+        <li>태그 선택자 : 1</li>
+        <li>전체 선택자 : 0</li>
+    </ol>
+    <h2>선언 순서</h2>
+    <p>= 선언된 순서에 따라 적용 (나중에 선언된 스타일이 우선 적용)</p>
+    <h3>+ style</h3>
+    <ul>
+        <li>fnot-family : 폰트 설정</li>
+        <li>tag #id : 공백 (하위 요소) / tag#id : 공백X (동위 요소)</li>
+        <li></li>
+    </ul>
+    <h2>속성값 상속 관계</h2>
+    <ul>
+        <li>폰트 관련 속성들 = 상속</li>
+        <li>font-size="initial" : 브라우저 기본값 (16px) (=모든 속성에 적용 O)</li>
+    </ul>
+    <h3>+ 상속관계</h3>
+    <ul>
+        <li>initial : 기본값으로</li>
+        <li>inherit : 상속</li>
+    </ul>
+</body>
+</html>

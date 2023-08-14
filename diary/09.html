@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revise</title>
+</head>
+<body>
+    <h1>HTML link</h1>
+    <h2>figure</h2>
+    <ul>
+        <li>&lt;figure&gt; : image caption</li>
+        <li>&lt;figcaption&gt; : caption 내용</li>
+            <ul style="list-style-type: none;">
+                figure>figcaption>img
+            </ul>
+        <li>Ex. &lt;figure&gt;
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption&gt;내용&lt;img~속성&gt;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/figure&gt;</div>
+        </li>
+    </ul>
+    <h2>image map</h2>
+    <div>(usemap = "#link") - image map</div>
+    <ul>
+        <li>&lt;map&gt; : 맵 만들기</li>
+        <li>&lt;area&gt; : 구역 나누기</li>
+    </ul>
+    Ex. &lt;div&gt;&lt;img src="~" usemap"#링크"&gt;&lt;/div&gt;</li>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;map name="링크"&gt;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="rect" coords="(좌측상단),(우측하단)" href="#link" alt="제목"&lt;/div&gt;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/map&gt;</div>
+    <p>
+        * img = inline 요소이므로 div(블럭)으로 감싸줌
+    </p>
+    <img src="./Html.png.png" width="450" alt="dividing area explanation">
+    <h2>name anchor</h2>
+    <ul>
+        <li>ul>(li&gt;a)*3 = (li&gt;a) 3번 반복</li>
+    </ul>
+    Ex. p&gt;a
+    <div>&rarr; &lt;p&gt;&lt;a href="#link"&gt;내용&lt;/a&gt;&lt;/p&gt;</div>
+    <div>&rarr; &lt;h1 id="link"&gt;헤드라인&lt;/h1&gt;</div>
+    <div>&rArr; p에 '내용' 누르면 '헤드라인'으로 가고싶다면 <mark>[#link]=[link]</mark></div>
+    <h1>CSS 문법</h1>
+    <h2>CSS 기본 선택자</h2>
+    <div>h1{color:blue; font-size:12px}</div>
+    <div>&rArr; Selector{Property:Value Property:Value;}</div>
+        <ul>
+            <li>클래스 선택자(Class Selector)</li>
+            <li>아이디 선택자(ID Selector)</li>
+        </ul>
+    <h2>HTML 문서 내 작성</h2>
+    <h3>작성 방법</h3>
+        <ul>
+            <li>&lt;style&gt; = internal</li>
+            <li>&lt;link&gt; = 외부 링크</li>
+            <li>inline 방식 = 태그 내 작성</li>
+            <li>import 방식 = 미생성 문서 이름에 cmd+click &rarr; create new file</li>
+        </ul>
+        <ul style="list-style-type: none;">
+            <li>- @imoprt url(파일명.css) = css 문서 내 css 불러오기</li>
+            <li>- &lt;div&gt; = 블럭 의미</li>
+            <li>- &lt;ul style="list-style-type:none;"&gt;" = 리스트지만 구분점 없어짐</li>
+        </ul>
+</body>
+</html>

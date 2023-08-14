@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table & Form</title>
+</head>
+<body>
+    <h1>Table & Form</h1>
+    <h2>Table</h2>
+    <div><b>= table>tr>td</b></div>
+    <div><img src="/일기/IMG_C5DF8147F79C-1.jpeg" width="300px" alt="table"></div>
+    <ul>
+        <li>table : 표</li>
+        <li>tr : table row (열)</li>
+        <li>td : table data (행)</li>
+    </ul>
+    <ul>
+        <li>&lt;thead&gt; : 표 머리말</li>
+        <li>&lt;tbody&gt; : 표 본문</li>
+        <li>&lt;tfoot&gt; : 표 꼬리말</li>
+    </ul>
+    <div>&rArr; for 기계 이해 / 화면상 X</div>
+    <p>
+        <div>&lt;style&gt;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{border:1px solid;}</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;td{border:1px solid;}</div>
+        <div>&lt;/style&gt;</div>
+            <ul>
+                <li>border : 윤곽선</li>
+                <li>1px : 선 두께</li>
+                <li>solid : 선 모양(직선)</li>
+            </ul>
+    </p>
+    <ul>
+        <li>&lt;caption&gt; : table title</li>
+        <li>&lt;colgroup&gt; : 열 그룹(칸)</li>
+        <li>&lt;col&gt; : column group</li>
+    </ul>
+    <p>
+        <div>&lt;colgroup&gt;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;col class="c1"</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;col class="c2"</div>
+        <div>&lt;/colgroup&gt;</div>
+    </p>
+    <p>
+        <div>&lt;style&gt;</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.c1{background-color : yellow;}</div>
+        <div>&lt;/style&gt;</div>
+    </p>
+    <div>&rArr; table&lt;colgroup&lt;col</div>
+    <div>&rArr; table&lt;tr(&lt;th)&lt;td</div>
+    <ul>
+        <li>colspan : 셀병합 (열)</li>
+        <div>&rarr; &lt;td colspan="4"&gt;</div>
+            <ul style="list-style-type: none;">
+                <li>- 남아있는 td 지우기</li>
+            </ul>
+        <li>rowspan : 셀병합 (행)</li>
+        <div>&rarr; &lt;td rowspan="2"</div>
+            <ul style="list-style-type: none;">
+                <li>- 밑 열 해당 td 지우기</li>
+            </ul>
+        <div>- border-collapse : "collapse"</div>
+        <li>scope="col" &rarr; 스크린리더기 (열)</li>
+        <li>scope="row" &rarr; 스크린리더기 (행)</li>
+    </ul>
+<h2>Form</h2>
+<div><b>= 사용자와 대화 가능</b></div>
+<div><b>= 사용자 의견 제출 etc. 서비스 제공 이외 가능 O</b></div>
+<ul>
+    <li>form : 입력 양식 태그</li>
+        <ul>
+            <li>action. data = 전송할 서버 주소</li>
+            <li>method.data = 전송 방법 (get, post)</li>
+        </ul>
+    <li>fieldset : form 요소 그루핑 (같은 형태의 서비스)</li>
+    <li>legend : fieldset title</li>
+</ul>
+<p>
+    <div>&lt;form action="서버주소" method="get"&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;제목&lt;/legend&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;내용 &lt;input type="txt"&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;내용 &lt;input&gt;="password"&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;</div>
+    <div>&lt;/fieldset&gt;</div>
+</p>
+<h3>+ method</h3>
+<ul>
+    <li>get : 사용자 입력값 주소창에 노출 O</li>
+    <li>post : 사용자 입력값 주소창에 노출 X</li>
+</ul>
+<h3>+ input/type</h3>
+<ul>
+    <li>아이디 : text</li>
+    <li>비밀번호 : password</li>
+    <li>검색 : search</li>
+    <li>이메일 : email</li>
+    <li>전화번호 :tel</li>
+    <li>컬러 : color</li>
+    <li>제출 : submit</li>
+    <li>췻소 : reset</li>
+    <li>&lt;button&gt;클릭&lt;/button&gt;</li>
+    <li>이미지 : img</li>
+    <li>파일 전송 : file</li>
+</ul>
+</body>
+</html>

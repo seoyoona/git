@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color</title>
+    <style>
+        .example_shadow{font-family: "Arial Black",sans-serif; font-size: 30px; color:#333; text-shadow: 4px 4px 5px darkgray;}
+    </style>
+</head>
+<body>
+    <h1>CSS Color</h1>
+    <h2>color</h2>
+    <div>- image background = {background:url(파일 경로);}</div>
+    <div>- 표시 방법</div>
+        <ul>
+            <li>관용색 : color name</li>
+            <li>hex code : rgb 값 16진수 표현 (#333)</li>
+            <li>rgb : (red,green,blue) 각각의 포화도 입력</li>
+                <ul>
+                    <li>ex. (163,229,77)</li>
+                </ul>
+            <li>hsl : (hue,saturation,lightness)</li>
+                <ul>
+                    <li>(0~360, 0~100%, 1~100%)</li>
+                </ul>
+            <li>rgba/hsla : alpha 채널 추가 (opacity)</li>
+                <ul>
+                    <li>ex. rgb(150,229,77,0.8) = opacity애서 0 생략 가능 (.8)</li>
+                </ul>
+        </ul>
+    <div>- padding 값 높아지면 box 크기 커짐</div>
+    <h2>word-spacing / letter-spacing</h2>
+    <ul>
+        <li>letter-spacing : 자간</li>
+        <li>word-spacing : 어간</li>
+    </ul>
+    <h2>text-decoration / text-transform</h2>
+    <div>= text-decoration (밑줄 속성)</div>
+        <ul>
+            <li>none : 밑줄x (링크)</li>
+            <li>underline : 밑줄</li>
+            <li>overline : 위에 줄</li>
+            <li>line-through : 취소선</li>
+        </ul>
+    <div>= text-transform</div>
+        <ul>
+            <li>uppercase : 대문자</li>
+            <li>lowercase : 소문자</li>
+            <li>capitalize : 앞에만 대문자</li>
+        </ul>
+    <h2>text-shadow</h2>
+    <div>= text-shadow : x y blur color;</div>
+        <ul>
+            <li>콤마 사용 x</li>
+            <li>콤마 사용 하는 경우 : () 안에 인자 사용시</li>
+        </ul>
+    <div class="example_shadow">EXAMPLE</div>
+    <h1>Paragraph</h1>
+    <h2>text-align : 문단 정렬</h2>
+    <div>= 여백 확보 필수!!!</div>
+    <div>= block에 적용시 하위 인라인 정렬</div>
+        <ul>
+            <li>left : 왼쪽 정렬</li>
+            <li>right : 오른쪽 정렬</li>
+            <li>center : 가운데 정렬</li>
+            <li>justify : 양쪽 정렬</li>
+        </ul>
+    <div>- margin : ~px (상하) ~px (좌우)</div>
+        <ul>
+            <li>margin 병합 : 한 쪽 방향만 몰아서 줌 (위아래만 적용, 좌우에 적용 x)</li>
+        </ul>
+    <h2>vertical-align</h2>
+    <div>= 수직정렬 (inline / table-cell box(td)) : 인라인끼리</div>
+    <div>.class  img{vertical-align:~}</div>
+    <h2>text-indent</h2>
+    <div>= 들여쓰기</div>
+        <ul>
+            <li>- (마이너스) : 내여쓰기 (ex. -9999...px : text 없어짐)</li>
+        </ul>
+    <h2>word-wrap / word-break</h2>
+        <ul>
+            <li>word-wrap : 영문 줄바꿈</li>
+            <li>word-break : 모든 언어 줄바꿈 (CJK = 글자기준 / en : 단어 기준)</li>
+        </ul>
+    <h2>white-space</h2>
+    <div>= 공백처리</div>
+        <ul>
+            <li>normal</li>
+            <li>nowrap : 줄바꿈 x</li>
+            <li>pre : 작성한대로 입력</li>
+            <li>pre-wrap : 줄바꿈 유지 + 작성한 입력값</li>
+            <li>pre-line : 줄바꿈 유지 + 작성한 줄바꿈만 + 공백x</li>
+        </ul>
+    <h2>text-overflow</h2>
+    <div>= 말줄임표 (너비제한 + 줄바꿈 x + 넘치는거 자름 + 줄임표)</div>
+    <div>= 블럭 요소에 적용</div>
+        <ul>
+            <li>width</li>
+            <li>overflow : hidden /scroll</li>
+            <li>text-overflow : ellipsis (말줄임표)</li>
+            <li>white-space : nowrap (무조건 한줄로 결과값)</li>
+        </ul>
+    <div>** a{display:block} = a를 블럭요소로 만듬</div>
+    <h2>display</h2>
+    <div>= css적을 화면 가시성 조정</div>
+        <ul>
+            <li>inline : 인라인 성격 (행으로 정렬)</li>
+            <li>inline-block : 나란히 블록</li>
+        </ul>
+</body>
+</html>
