@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_sub quiz</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap{margin: 0 auto; background: lightgray; max-width: 1440px; width: 100%; text-align: center; font-size: 200%; color:white;}
+        header{height: 100px; line-height: 100px;}
+        .vb{background: lightcoral; height: 100px; line-height: 100px;}
+        .ca{background: gray; height: 800px; float: right; width: 1040px; line-height: 800px;}
+        .lna_1{width: 400px; float: left; height: 400px; line-height: 400px;}
+        .lna_2{background: rgb(176, 176, 176); width: 400px; line-height: 400px; height: 400px; margin-top: 400px;}
+        .cf:after{display: block; content: ''; clear:both;}
+        .lna_1,.ca{display: inline-block;}
+        footer{height: 100px; line-height: 100px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>Global Navigation Area</header>
+        <main>
+            <p class="vb">Visual Banner</p>
+            <p class="lna_1">Local Navigation Area</p>
+            <p class="ca">Contents Area</p>
+            <p class="lna_2 cf">Local Navigation Area</p>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

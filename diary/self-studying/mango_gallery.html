@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mango_gallery (figma)</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        h1{font-weight: lighter; width: 100%; height: 100px; line-height: 100px; margin-left: 5%;}
+        .hashtag{margin-left: 5%; display: inline-flex; padding: 0.3125rem 0.75rem; justify-content: center; align-items: center; border-radius: 62500000rem; background: #E9E9E9; margin-bottom: 2%;}
+        .card{display: flex; width: 15rem; height: 21.875rem; flex-direction: column; justify-content: center; align-items: flex-start; flex-shrink: 0; border-radius: 1.25rem; box-shadow: 4px 12px 24px 0px rgba(0, 0, 0, 0.25); position: relative;}
+        .picture{width: 15rem; height: 16.25rem; flex-shrink: 0; background: url('../07/KakaoTalk_20211228_183545427.jpg'), lightgray 50% / contain no-repeat; background-size: 240px; position: absolute; top: 0; border-top-left-radius: 1.25em;  border-top-right-radius: 1.25em;}
+        .description{display: flex; width: 240px; height:calc(21.875- 16.25em); flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 0.8125rem; background: #FFF;position: absolute; bottom: 0; left: 0; border-bottom-left-radius: 1.25em;  border-bottom-right-radius: 1.25em;}
+        h3{color: #444; text-align: center; font-family: Pretendard; font-size: 1.25rem; font-style: normal; font-weight: 600; line-height: 0%; /* 0rem */ letter-spacing: 0.0625rem; text-transform: uppercase; padding: 10px; padding-bottom: 5px;}
+        .text-centered{display: flex; width: 12.5rem; height: 2.375rem; flex-direction: column; justify-content: center; overflow: hidden; color: #7E7E7E; text-overflow: ellipsis; white-space: nowrap; font-family: Pretendard; font-size: 0.75rem; font-style: normal; font-weight: 500; line-height: 1rem; /* 133.333% */ letter-spacing: -0.00625rem; padding-left: 10px;}
+        .wrap{display: flex; width: 50%; flex-flow: row; flex-wrap: nowrap;} 
+        .container{display: flex; width: 100%; flex-direction: row; flex-wrap: nowrap; margin-right: 5%; margin-left: 5%;}
+        .card_2 .picture{opacity: 0.5;}
+        .card_2{width: 7.5em; overflow: hidden; position: relative;}
+        .card_2:after{content: ''; position: absolute; top: 16.26em; left: 7.5em; border-style: solid; border-width: 11.25em 7.5em 0 0; border-color: #fff transparent transparent; border-top-right-radius: 0; border-bottom-right-radius: 0;}
+    </style>
+    
+</head>
+<body>
+    <h1>My Gallery</h1>
+    <p class="hashtag"># 동네</p>
+    <div class="wrap">
+        <div class="container">
+            <div class="card">
+                <div class="picture"></div>
+                <div class="description">
+                    <h3>김망고</h3>
+                    <p class="text-centered">내게 뭐라든 남들과는 달라 넌 Maybe you could be the one 날 믿어봐 한번 I'm not looking for just fun Maybe I could be the one Oh baby 예민하대 나 lately 너 없이는 매일 매일이 yeah 재미없어 어쩌지 I just want you Call my phone right no</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card card_2">
+                <div class="picture"></div>
+                <div class="description">
+                    <h3>김망고</h3>
+                    <p class="text-centered">내게 뭐라든 남들과는 달라 넌 Maybe you could be the one 날 믿어봐 한번 I'm not looking for just fun Maybe I could be the one Oh baby 예민하대 나 lately 너 없이는 매일 매일이 yeah 재미없어 어쩌지 I just want you Call my phone right no</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

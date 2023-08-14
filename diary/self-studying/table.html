@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{border-collapse: collapse; text-align: center;}
+        td{border: 1px solid;}
+        th{border: 1px solid;}
+        .c1{background-color: lightblue;}
+        .c2{background-color: lightcoral;}
+        .c3{background-color: lightgray;}
+    </style>
+    <title>Table Summary</title>
+</head>
+<body>
+    <h1>Table Summary</h1>
+    <table>
+        <caption><strong>Score</strong></caption>
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+        </colgroup>
+        <thead>
+            <tr>
+                <td>교과목</td>
+                <td>점수</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>93</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>92</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Average</td>
+                <td>92.5</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="2">컴퓨터 그래픽스 기능사</td>
+        </tr>
+        <tr>
+            <td rowspan="3">프로그램</td>
+            <td>일러스트</td>
+        </tr>
+        <tr>
+            <td>포토샵</td>
+        </tr>
+        <tr>
+            <td>인디자인</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <caption><strong>scope(스크린리더기가 읽는 순서)</strong></caption>
+        <tr>
+            <th scope="row" style="background-color: lightgray;">면적(m<sup>2</sup>)</td>
+            <th scope="row" style="background-color: lightgray;">매매가(만원)</td>
+            <th scope="row" style="background-color: lightgray;">전세가(만원)</td>
+        </tr>
+        <tr>
+            <td scope="row">159B</td>
+            <td>74,500</td>
+            <td>33,500</td>
+        </tr>
+        <tr>
+            <td scope="row">195</td>
+            <td>87,500</td>
+            <td>38,00</td>
+        </tr>
+    </table>
+</body>
+</html>
