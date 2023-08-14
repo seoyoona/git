@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidden</title>
+    <style>
+        .box{border: 1px solid; margin: 10px; padding: 10px;}
+        .hdd{color: red; display: none;}
+        .hdd2{
+            /* color: rgba(255,0,0,0); */
+            visibility: hidden;}
+        .box:nth-child(2):hover .hdd{display: inline;}
+        .box:nth-child(3):hover .hdd2{
+            /* color: rgba(255,0,0,1); */
+            visibility: visible;}
+        /* 첫번째 자식요소 .box 마우스 오버시 다음 형제 요소 중 .box .hdd에 적용 */
+        .box:nth-child(1):hover~.box .hdd{display: inline;}
+    </style>
+</head>
+<body>
+   <div class="box">
+        <p><strong>이름 :</strong>홍길동</p>
+        <p><strong>연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+   <div class="box">
+        <p><strong class="hdd">이름 :</strong>홍길동</p>
+        <p><strong class="hdd">연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+   <div class="box">
+        <p><strong class="hdd2">이름 :</strong>홍길동</p>
+        <p><strong class="hdd2">연락처 :</strong>서울 종로구 세검정 </p>
+    </div>
+</body>
+</html>

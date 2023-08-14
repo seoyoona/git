@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout using position</title>
+    <style>
+        body,header,div,footer,h1,p,ul,li {margin:0; padding:0;}
+        li {list-style-type:none;}
+        .clear:after {content:""; display:block; clear:both;}
+        body {font:14px 'Malgun Gothic','맑은고딕';}
+        a {text-decoration:none; color:#444;}
+        a:hover {text-decoration:underline;}
+        #wrap{background: lightblue; padding-bottom: 100%;}
+        .clear:after{display: block; clear: both; content: '';}
+        header{background: red; display: flex; height: 50px; position: fixed; width: 100%; z-index: 1;}
+        .gnb{display: flex;}
+        h1{line-height: 50px; padding-right: 50px;}
+        .gnb a{line-height: 50px; padding: 10px;}
+        .lnb{background: lightgray; height: 50px; float: left; width: 100%; margin-top: 50px; position: fixed;}
+        .lnb li{display: inline-block; padding-right: 20%;}
+        .lnb a{line-height: 50px;}
+        .content_area{background: lightcoral; width: 800px; float: left; width: 80%; margin-left: 10%; margin-top: 0; position: fixed;}
+        footer{padding-top: 100%;}
+        .btn{width: 50px; height: 50px; background: yellow; border-radius: 100%; color: black; text-align: center; line-height:50px; font-weight: bold; position: fixed; display: block; bottom: 50px; right:50px; padding: 50px; font-size: 200%;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="clear">
+            <h1><a href="#">logotype</a></h1>
+            <ul class="gnb clear">
+                <li><a href="#">m1</a></li>
+                <li><a href="#">m2</a></li>
+                <li><a href="#">m3</a></li>
+                <li><a href="#">m4</a></li>
+            </ul>
+        </header>
+        <div id="container" class="clear">
+            <ul class="lnb">
+                <li><a href="#">s4</a></li>
+                <li><a href="#">s3</a></li>
+                <li><a href="#">s2</a></li>
+                <li><a href="#">s1</a></li>
+            </ul>
+            <div class="content_area">
+                <p>내용<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정<br> 헤더를 상단에 고정</p>
+            </div>
+        </div>
+        <footer>
+            <p>copyright</p>
+        </footer>
+        <a href="#container" class="btn">TOP</a>
+    </div>
+</body>
+</html>

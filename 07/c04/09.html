@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprite image</title>
+    <style>
+        li{list-style: none; margin: 5px;}
+        li a{text-decoration: none; font-family: "Times New Roman", Times, serif; color: #333; display: block; background: lightgray; padding-left: 30px; background: lightgray url('./img/bg_sprite.png') no-repeat; background-size: 26px; font-size: 25px;}
+        /* transition : hover에 말고 li>a에 넣기 */
+        .lnb li:nth-child(1) a{background-position: 0 0; transition: all 0.5s;}
+        .lnb li:nth-child(2) a{background-position: 0 -50px;}
+        .lnb li:nth-child(3) a{background-position: 0 -100px;}
+        .lnb li:nth-child(4) a{background-position: 0 -150px;}
+        .lnb li:nth-child(1):hover a{background-position: 0 -50px;}
+        /* background : image/color/repeat/position/attachment */
+    </style>
+</head>
+<body>
+    <h1>sprite image</h1>
+    <!-- 페이지 로딩속도를 고려함 : 이미지 햐나로 구현-->
+    <ul class="lnb">
+        <li><a href="#">Theater</a></li>
+        <li><a href="#">Secret Garden</a></li>
+        <li><a href="#">Concert Hall</a></li>
+        <li><a href="#">Animal Farm</a></li>
+    </ul>
+</body>
+</html>

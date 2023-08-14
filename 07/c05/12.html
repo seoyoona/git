@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* animation- name : 애니메이션 이름 */
+        /* animation-duration : 지속 시간 */
+        /* animation-fill-mode : 종료시 스타일 지정 */
+        /* animation-iteration-count : 실행 횟수 */
+        /* animation-direction : 방향 */
+        /* animation-play-state : 진행 상태 */
+        p{width: 100px; height: 100px; background: brown; animation-name: box; animation-duration: 4s; animation-fill-mode: forwards; animation-iteration-count: infinite; animation-direction: alternate; animation-play-state: running;}
+        @keyframes box {0%{transform: translate(200px,200px); width: 150px; background: green; color: white;} 50%{background: blue; width: 50px; transform: translate(0,100px) rotate(45deg);} 100%{transform: translate(100px, 0px); background: yellow;}}
+        div{width: 200px; height: 200px; background: lightblue; border-radius: 100%; animation: ball 5s ease-in 1s forwards infinite alternate running;}
+        @keyframes ball {0%{transform: translate(200px,200px);background: lightcoral;} 50%{background: lightseagreen;} 100%{transform: translate(0px,0px);}}
+        button:hover+p{animation-play-state: paused;}
+    </style>
+</head>
+<body>
+    <p>
+        Animation..
+    </p>
+    <div class="ball"></div>
+    <button>stop</button>
+</body>
+</html>

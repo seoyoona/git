@@ -1,0 +1,10 @@
+/* 부모한테 선언 -> 자식이 배치됨 */
+/* 부모 = container, 자식 = item */
+/* 상속 안됨 = 자식박스까지만 적용 */
+.container{display: flex;}
+#opt1 .box:nth-child(1){display: flex;}
+/* 방향 설정 */
+#opt1{flex-direction: row;} /* 왼 > 오 */
+#opt2{flex-direction: row-reverse;} /* 오 > 왼 (float:right 랑 비슷) */
+#opt3{flex-direction: column;} /* 상 > 하 */
+#opt4{flex-direction: column-reverse;} /* 하 > 상 */

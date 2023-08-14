@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; }
+        body{text-align: center; line-height: 100px; font-size: 200%; color: white;}
+        .h_100{height: 100px;}
+        .fl{float:left}
+        .cf{clear:left}
+        .cf:after{content: ''; display: block; clear: both;}
+        .bg_red{background: red; width: 300px;}
+        .bg_gray{background: gray;}
+        .bg_green{background: green;}
+        aside{float: right;}
+        main{display: flex;}
+        section{width: 100%;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="bg_gray h_100">Header</header>
+        <main class="cf">
+            <nav class="bg_red h_100 fl">SideBar</nav>
+            <section class="h_100 fl bg_green">Contents</section>
+            <aside class="fl h_100 bg_red">Sidebar_AD</aside>
+        </main>
+        <footer class="bg_gray h_100">Footer</footer>
+    </div>
+</body>
+</html>

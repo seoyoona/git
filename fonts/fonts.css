@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* font-face */
+@font-face {
+    font-family: krd;
+    src: url('Korail_Round_Gothic_Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: krd;
+    src: url('Korail_Round_Gothic_Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: krd;
+    src: url('Korail_Round_Gothic_Light.ttf');
+    font-weight: 300;
+}
+.so{font-family: krd;}

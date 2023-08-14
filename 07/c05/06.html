@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rounded outline</title>
+    <style>
+        .radius{background: darkgoldenrod; display:inline-block; width: 100px; height: 100px; margin: 20px 0;}
+        .radius1{border-radius: 100px;}
+        .radius2{width: 200px; border-radius: 100px 100px 0 0;}
+        .radius3{border-radius: 100px 0 0 0;}
+        .radius4{width: 200px; border-radius: 50px 20px 50px 20px; border: 5px dotted #800;}
+        .radius5, .radius6{width: 430px; height: 100px; background: pink;}
+        /* 가로,세로 */
+        .radius5{border-radius: 15px/70px;}
+        .radius6{border-radius: 15px 70px 15px 70px / 70px 15px 70px 15px; border: 2px solid red;}
+    </style>
+</head>
+<body>
+    <span class="radius radius1">radius1</span>
+   <span class="radius radius2">radius2</span>
+   <span class="radius radius3">radius3</span>
+   <span class="radius radius4">radius4</span>
+   <!-- span.radius.radius5 -->
+   <span class="radius radius5">radius5</span>
+   <span class="radius radius6">radius6</span>
+</body>
+</html>

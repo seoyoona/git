@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <audio src="./media/applause.mp3" controls autoplay loop></audio>
+    <!-- autoplay : 자동재생 -->
+    <!-- loop : 연속재생 -->
+    <audio controls>
+        <source src="media/applause.wav">
+        <source src="media/applause.ogg">
+        <source src="media/applause.mp3">
+    </audio>
+    <!-- 구형 웹부라우저 고려 : wav 안되면 ogg 안되면 mp3 -->
+</body>
+</html>

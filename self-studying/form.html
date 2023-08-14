@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form summary</title>
+</head>
+<body>
+    <h1>Form summary</h1>
+    <form action="../index.html" method="post">
+        <fieldset>
+            <legend><strong>LOGIN</strong></legend>
+            <p>ID : <input type="text"></p>
+            <p>PW : <input type="text"></p>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="../index.html" method="post">
+        <fieldset>
+            <legend><strong>Type 속성</strong></legend>
+            <p>ID : <input type="text" placeholder="아이디를 입력해주세요"></p>
+            <p>PW : <input type="password" placeholder="비밀번호를 입력해주세요"></p>
+            <p>Search : <input type="search" placeholder="검색어를 입력하세요"></p>
+            <p>Email : <input type="email"> @ <select name="server" id="server">
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.net</option>
+                <option value="google">gmail.com</option>
+            </select></p>
+            <p>Tel : <input type="tel"></p>
+            <!-- select>option : 선택창 -->
+            <p>Color : <input type="color"></p>
+            <p>Quantity : <input type="number" min="1" max="10"></p>
+            <p>Satisfaction rate : <input type="range" min="0" max="10"></p>
+            <p>Yes <input type="radio" name="received" id="received"> No <input type="radio" name="received"></p>
+            <p><input type="submit" value="submit"></p>
+            <p><input type="reset" value="cancel"></p>
+            <p><input type="button" value="ok"></p>
+            <p><input type="image" src="../06/images/btn_gallery.gif"></p>
+            <p><input type="file" value="send selected file"></p>
+            <p></p>
+            <p></p>
+        </fieldset>
+    </form>
+    <form action="../index.html" method="get">
+        <fieldset>
+            <legend><strong>Sign Up</strong></legend>
+            <p>Purpose : <br><textarea name="Purpose" id="Purpose" cols="100" rows="10"></textarea></p>
+            <p>Tel : <select name="tel2" id="tel2">
+                <option value="010">010</option>
+                <option value="02">02</option>
+                <option value="031">031</option>
+            </select> <input type="tel" placeholder="" width="5"> - <input type="tel" placeholder="" width="5"></p>
+        </fieldset>
+    </form>
+</body>
+</html>

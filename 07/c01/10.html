@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box>:nth-child(5){color: red;}
+        .box>span:nth-of-type(1){background-color: black; color: white;}
+        .box>span:nth-child(4){color: pink;}
+        .box>:nth-of-type(1){background-color: yellow;}
+        .box>p:nth-of-type(1):hover+span{background-color: blue;}
+        /* .box의 p중 첫번째 마우스 호버 시 인접한 span 배경색 바꾸기 */
+        .box>p:nth-of-type(1):hover+span:before{content: '***';}
+        /* .box의 p 중 첫번째 마우스 호버 시 인접한 span 앞부분 컨텐츠 추가 */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>1. p태그1</p>
+        <span>2. span태그1</span>
+        <p>3. p태그2</p>
+        <span>4. span태그2</span>
+        <p>5. p태그3</p>
+    </div>
+</body>
+</html>

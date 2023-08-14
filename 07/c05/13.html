@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation using spirte image</title>
+    <style>
+        #spriteContainer{width: 80px; height: 80px; background-image: url('../c04/img/sprites_final.png'); background-position: 0 0; animation: sprite .3s steps(24) infinite; display: block;}
+        @keyframes sprite {100%{background-position: -1920px;}}
+    </style>
+</head>
+<body>
+    <div id="spriteContainer"></div>
+</body>
+</html>

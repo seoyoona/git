@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inherit_상속</title>
+    <style>
+        /* font 관련만 거의 상속 / 다른 속성은 상속 안됨(ex. border) */
+        *{font-family: "맑은 고딕", 바탕, "Times New Roman";}
+        #cook{color: #7d7d7d; font-size: 12px; border: 1px solid blue; width: 300px;}
+        /* initial : 초기화 (모든 속성에 적용 가능) */
+        /* inherit : 상속 (모든 속성에 적용 가능) */
+        #cook p{font-size: initial; line-height: 150%; width: 500px; border: inherit;}
+        #cook p span{font-weight: bold; color: #0037ff; color: inherit}
+    </style>
+</head>
+<body>
+    <h1>속성 값의 상속 관계 알아보기</h1>
+    <hr>
+    <div id="cook">
+        <h2>굴 이야기</h2>
+        <p>일명 <span>석화</span>라고도 하는데 멀리서 보면 따낸 굴조개 껍질이 바위면에 하얗게 붙어있어서 마치 <span>꽃무더기</span>를 연상하게 한다. 굴은 <span>3대 영양소</span>는 물론 비타민, 미네랄에 이르기까지 풍부한 영양분을 함유하고 있어서 완전식품인 우유와 별로 다를 바가 없다.</p>
+    </div>
+</body>
+</html>

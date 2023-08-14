@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading</title>
+    <link rel="stylesheet" href="./11.css">
+    <style>
+        /* id:100 / class:10 / tag:1  */
+        /* 111 */
+        body#bgPage1.bgPage2{background-color: #eec0ff;}
+        /* 101 */
+        body#bgPage1{background-color: lightgreen;}
+        /* 100 */
+        #bgPage1{background-color: skyblue;}
+        /* 10 */
+        .bgPage2{background-color: gray;}
+        /* 1 */
+        body{background-color: black; color: white; font-family: "맑은 고딕", dotum, "Times New Roman";}
+        *{color: red;}
+        body *{color: white;}
+        /* 선택자 우선순위 적용 */
+        body>h1{color: blue;}
+        /* 작성 순서 */
+        h1{color: yellow;}
+        /* 선택자 우선순위 적용해 파란색으로 바꾸기*/
+        /* 최우선 */
+        span{color: #ff0000 !important;}
+        /* 1+10+1+10 = 22 */
+        p.bgPage2 span.blueText{color: navy;}
+        /* 12 */
+        p span.blueText{color: orange;}
+        /* 11 */
+        span.blueText{color: green;}
+        /* 2 */
+        p>span{color: blue;}
+        /* 1 */
+        span{color: red;}
+    </style>
+    <!-- class/*/ = body보다 먼저 선언해도 class 적용 -->
+    <!-- 전체선택자 밑 선언 시 : 하위 선택자 점수 높이기 -->
+</head>
+<body>
+    <body id="bgPage1" class="bgPage2">
+        <h1>Cascading (선택자별 우선 순위)</h1>
+        <hr />
+        <div>
+            <h2>굴 이야기</h2> 
+            <p class="bgPage2">
+                일명 <span class="blueText">석화</span>라고도 하는데 멀리서 보면 따낸 굴조개 껍질이 바위면에 하얗게 붙어있어서 마치 <span class="blueText">꽃무더기</span>를 연상하게 한다. 굴은 <span class="blueText">3대 영양소</span>는 물론 비타민, 미네랄에 이르기까지 풍부한 영양분을 함유하고 있어서 완전식품인 우유와 별로 다를 바가 없다.
+            </p>
+        </div>
+    </body>
+</body>
+</html>

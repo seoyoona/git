@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        #userText{font-size: 30px; color: red;}
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>다양한 type의 종류</legend>
+            <p>아이디 : <input type="text"></p>
+            <p>비밀번호 : <input type="password"></p>
+            <p>검색 : <input type="search"></p>
+            <p>이메일 : <input type="email"></p>
+            <p>전화번호 : <input type="tel"></p>
+            <p>컬러 : <input type="color"></p>
+            <p>취소 <input type="reset" value="취소"></p>
+            <p><input type="button" value="클릭"></p>
+            <p><input type="submit"></p>
+            <p><input type="image" src="./images/btn_gallery.gif" alt="룸갤러리"></p>
+            <p><input type="file"></p>
+        </fieldset>
+        <fieldset>
+            <legend>name</legend>
+            <input type="text" value="텍스트" name="userText" id="userText">
+        </fieldset>
+    </form>
+</body>
+</html>

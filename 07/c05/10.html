@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        body{margin-left: 100px;}
+        p{padding: 15px; background-color:rgb(131, 157, 181) ; border: 5px solid rgba(0,0,0,.5); width: 400px; font: 21px Times; color: white;}
+        body:hover .t1{transform: translate(0px,0px); transition: transform 1s;}
+        .t1{transform: translate(30px, 20px);}
+        .t2{transform: rotate(-30deg);}
+        .t3{transform: scale(0.7,1.3) rotate(45deg);}
+        .t4{transform: skew(15deg,10deg);}
+        /* matrix : scale X/Y skew X/Y translate X/Y */
+        .t5{transform: matrix(1,-01,0,1,0,0);}
+    </style>
+</head>
+<body>
+    <p>Original</p>
+    <p class="t1">translate(30px,20px)</p>
+    <p class="t2">rotate(60deg)</p>
+    <p class="t3">scale(0.7, 1.3)</p>
+    <p class="t4">skew(15deg, 10deg)</p>
+    <p class="t5">matrix(1, -0.1, 0, 1, 0, 0)</p>
+</body>
+</html>

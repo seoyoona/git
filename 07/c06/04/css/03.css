@@ -1,0 +1,7 @@
+.container{display: flex; width: 900px;}
+#opt1{justify-content: flex-start;}
+#opt2{justify-content: flex-end;}
+#opt3{justify-content: center;}
+#opt4{justify-content: space-between;}
+#opt5{justify-content: space-around;}
+#opt6{justify-content: space-evenly;}

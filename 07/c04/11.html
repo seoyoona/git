@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial gradient</title>
+    <style>
+        p{padding: 60px;}
+        .rg1{background: radial-gradient(closest-side at 35% 35%,red,yellow,green);}
+        .rg2{background: radial-gradient(closest-corner at 35% 35%,red,yellow,green);}
+        .rg3{background: radial-gradient(farthest-side at 35% 35%,red,yellow,green); background: radial-gradient(farthest-corner at 35% 35%,red,yellow,green);}
+        .rg4{background: rgb(199,29,245);background: linear-gradient(90deg, rgba(199,29,245,1) 0%, rgba(200,12,118,1) 35%, rgba(121,9,143,1) 100%);}
+    </style>
+</head>
+<body>
+    <h1>radial gradient</h1>
+    <p class="rg1"></p>
+    <p class="rg2"></p>
+    <p class="rg3"></p>
+    <p class="rg4"></p>
+</body>
+</html>

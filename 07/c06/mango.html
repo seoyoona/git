@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쌤 퀴즈</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .browser{background: lightgray; width: 700px; height: 400px;}
+        .box1{background: red; width: 100px; height: 100px; float: left; margin-left: 146px; margin-top: 145px;}
+        .box2{background: red; width: 100px; height: 100px; float: right; margin-right: 146px;  margin-top: 145px;}
+        .second{background: lightgray; width: 700px; height: 400px; margin-top: 20px;}
+        .second p{display: inline-block}
+        .b1{background: red; width: 100px; height: 100px; float: left; margin-top: 145px; margin-left: 146px; }
+        .b2{background: red; width: 100px; height: 100px;  margin-top: 145px; margin-left: 54px;}
+        .b3{background: red; width: 100px; height: 100px; float: right; margin-top: 145px; margin-right: 146px;}
+        
+        /* css 사용해 html에  가짜 콘텐츠 추가 */
+        /* content는 인라인으로 추가되기 때문에 block으로 바꿈 */
+        /* float을 해제 */
+        /* .cf:after{content: ''; display: block; clear: both;}
+        .box1{float: left;}
+        .box2{float: right;}
+        .box1,.box2{width: 100px; height: 100px; background: red;}
+        .browser{width: 700px; height: 400px; background: lightgray; margin: auto; padding: 255px 146px; box-sizing: border-box;}
+        .cf:after{content: ''; display: block; clear: both;}
+        .b1{float: left;}
+        .b2{float: right;}
+        .b3{}
+        .b1,.b2,.b3{width: 100px; height: 100px; background: red;}
+        .second{margin-top: 20px; width: 700px; height: 400px; background: lightgray; margin: auto; padding: 255px 146px; box-sizing: border-box;} */
+
+    </style>
+</head>
+<body>
+    <div class="browser cf">
+        <p class="box1"></p>
+        <p class="box2"></p>
+    </div>
+    <div class="second cf">
+        <p class="b1"></p>
+        <p class="b2"></p>
+        <p class="b3"></p>
+    </div>
+</body>
+</html>

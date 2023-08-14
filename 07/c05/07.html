@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image</title>
+    <style>
+        body{margin: 20px;}
+        div{width: 600px; height: 50px; padding: 15px; border: 10px solid transparent;}
+        /* border-image : url + slice(px) */
+        .round{border-image: url('../c04/img/border.png') 20; border-image: linear-gradient(red,blue) 27%;}
+        .repeat{border-image: url('../c04/img/border.png') 20 repeat;}
+        .stretch{border-image: url('../c04/img/border.png') 20 stretch;}
+        .frame{margin: 150px auto; width: 600px; height: 300px; background: red; border-image: url('../c04/img/0307-border-image/border.jpg') 45 fill/auto repeat;}
+    </style>
+</head>
+<body>
+    <div class="round">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="repeat">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="stretch">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    <div class="frame">
+        It's impossible not only starting good but also keeping it firm!!</div>
+    
+</body>
+</html>
