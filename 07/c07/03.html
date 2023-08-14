@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewport</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body{width: 100vw; background: ivory;}
+        span{display: block; color: steelblue;}
+        .per{width: 100%; background: lightgray;}
+        .per p{width: 80%; background: lightcoral;}
+        .per p span{width: 100%; background: lightgoldenrodyellow;}
+        .vw{width: 100vw; background: lightcyan;}
+        .vw p{width: 80vw; background: lightseagreen;}
+        .vw p span{width: 100vw; background: lightsalmon;}
+    </style>
+</head>
+<body>
+    <div class="per">
+        <p>부모 기준 : percent 단위 <span>percent</span> </p>
+    </div>
+    <div class="vw">
+        <p>브라우저 너비 기준 : <span>vw</span></p>
+    </div>
+</body>
+</html>

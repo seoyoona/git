@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewport</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        /* 가변 크기 (반응형) 구하는 공식 : 자식크기 / 부모크기 X 100 */
+        #vh{font-size: 5vh;}
+        /* (5 X 900)/100 = 45px */
+        /* vh 공식 : (폰트 크기 X 화면 높이)/100 */
+        #vw{font-size: 5vw;}
+        /* (5 X 1280)/100 = 64px */
+        /* vw 공식 : (폰트 크기 X 화면 너비)/100 */
+    </style>
+</head>
+<body>
+    <h1>상대 단위</h1>
+    <h2>vw / vh</h2>
+    <p id="vh">웹브라우저의 높이 기준 : vh (viewport height)</span></p>
+    <p id="vw">웹브라우저의 너비 기준 : vw (viewport width)</span></p>
+</body>
+</html>

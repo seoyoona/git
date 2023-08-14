@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em / rem</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        #para1{font-size: 6em;}
+        /* 16 X 6em = 96px */
+        #para1 span{font-size: 2em;}
+        /* em : 부모 기준 */
+        #para2{font-size: 6rem;}
+        /* 16 X 6rem : 96px */
+        #para2 span{font-size: 2rem;}
+        /* rem : root 기준 (html tag 기준) */
+    </style>
+</head>
+<body>
+    <h1>상대 단위</h1>
+    <h2>em / rem</h2>
+    <p id="para1">대문자 M의 너비를 기준으로 한 단위 <br> <span>1em = 약 16px</span></p>
+    <p id="para2">대문자 M의 너비를 기준으로 한 단위 <br> <span>1rem = 약 16px</span></p>
+</body>
+</html>
