@@ -8,8 +8,7 @@
 /* 자식(하위)선택자 */
 body>*{width: 900px; padding: 20px; background-color: ivory; text-align: center; margin: auto;}
 header{display: flex; height: 200px; justify-content: space-between; align-items: flex-end;}
-/* justify-content: space-between = 남는 자리 균등배치
-    align-items : 세로 정렬 */
+/* justify-content: space-between = 남는 자리 균등배치 / align-items : 세로 정렬 */
 h1{width: 200px; height: 200px; background-color: skyblue; line-height: 200px;}
 ul{display: flex; list-style: none; width: 600px; justify-content: center;}
 li{width: 70px; height: 60px; line-height: 60px;}
