@@ -5,13 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>border_tip_practice</title>
     <link rel="stylesheet" href="../07/c07/css/reset.css">
-    <link rel="stylesheet" href="../07/c07/css/border_tip.css">
+    <style>
+        header{display: flex; justify-content: center; align-items: center; height: 10vh;}
+        h1{margin: 0; text-transform: uppercase;}
+        nav{display: flex; justify-content: center; align-items: center; min-width: calc(170px * 6); background: ivory;}
+        .border_tip{text-align: center; width: 150px; height: 50px; background: lightsteelblue; line-height: 50px; border-right: 2px solid ivory; padding-left: 10px; padding-right: 10px; text-decoration: none; color: #3c3c3c; text-transform: uppercase; font-size: 80%; font-weight: bold; position: relative;}
+        .b_tip_1::after,.b_tip_2::after,.b_tip_3::after,.b_tip_4::after,.b_tip_5::after,.b_tip_6::after {content: ''; position: absolute; border-bottom: 10px solid lightsteelblue; border-left: 10px solid transparent; border-right:10px solid transparent; top:-10px; left:50%; margin-left: -10px;}
+        .b_tip_1:hover::before,.b_tip_2:hover::before,.b_tip_3:hover::before,.b_tip_4:hover::before,.b_tip_5:hover::before,.b_tip_6:hover::before{content: ''; border-top: 10px solid lightsteelblue; border-left: solid 10px transparent; border-right:  solid 10px transparent; position: absolute; bottom: -10px; left: 20%;}
+        section{margin-top: 10%; text-align: center;}
+    </style>
 </head>
 <body>
-    <h1>border tip practice</h1>
-    <div class="border_tip">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident molestias harum natus, dolorum ad adipisci velit voluptas quas aut culpa doloribus quod laudantium consequatur ipsam sequi eveniet laboriosam dolore! Ipsum.
-    </div>
-    <div class="border"></div>
+    <header>
+        <h1>border tip practice</h1>
+    </header>
+    <nav>
+        <a href="#" class="border_tip b_tip_1">
+            Lorem ipsum
+        </a>
+        <a href="#" class="border_tip b_tip_2">
+            dolor sit
+        </a>
+        <a href="#" class="border_tip b_tip_3">
+            amet consectetur
+        </a>
+        <a href="#" class="border_tip b_tip_4">
+            adipisicing elit
+        </a>
+        <a href="#" class="border_tip b_tip_5">
+            Provident molestias
+        </a>
+        <a href="#" class="border_tip b_tip_6">
+            harum natus
+        </a>
+    </nav>
+    <section>
+        <p>menu 마우스 오버 : 하단 border tip</p>
+    </section>
+    <footer>
+        <div class="border"></div>
+    </footer>
 </body>
 </html>

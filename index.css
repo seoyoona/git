@@ -1,47 +1,49 @@
-*{margin: 0; padding: 0;}
-a:hover{color: #80489c; text-decoration: none;}
-a{color: #6867ac; text-decoration: none;}
-a:visited{color: #6867ac; text-decoration: none;}
-body{background-color: #ece6dc;}
-h1{color: #80489c; text-align: center; line-height: 150px;}
-h2{color: #f16767; text-align: center; line-height: 100px;}
-h3{color: #a1405c; padding-bottom: 40px; text-align: center;}
-ul{list-style: none}
-.design{border: 2px solid #f16767; padding: 20px; margin-right: 10px; margin-left: 10px; width: 170px;}
-.coding{border: 2px solid #f16767; padding: 20px; margin-left: 10px; margin-right: 10px; width: 170px;}
-.devoirs{display: flex; justify-content: center;}
-.diary{list-style: none; display: flex; justify-content: center;}
-.juillet,.aout{border: 2px solid #f16767; padding: 20px; margin-right: 10px; margin-left: 10px; width: 170px;}
-.self>ul{list-style: none; border: 2px solid #f16767; border-collapse: collapse; padding: 10px; width: 200px;}
-.self{justify-content: center; display: flex;}
-
-@font-face {
+* { margin: 0; padding: 0;}
+a { color: #6867ac; text-decoration: none;}
+a:hover { color: #80489c; text-decoration: none;}
+body { background-color: #ece6dc; font-family: 'jamsil'; font-weight: 400;}
+h1,h2 { color: #6867ac; text-align: center; line-height: 150px; font-family: 'jamsil'; font-weight: 800; text-transform: uppercase;}
+h3 { color: #a1405c; padding-bottom: 40px; text-align: center; font-family: 'jamsil'; font-weight: 700;}
+ul {list-style: none; line-height: 170%;}
+.diary,.devoirs,.self{display: flex; justify-content: center; align-items: center; ;}
+.container{padding: 10px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.container ul{padding: 30px; border: 2px solid lightcoral; min-width: 170px;}
+.diary ul,.self ul{height: 350px;}
+.devoirs ul{min-height: 400px;}
+footer { display: flex; justify-content: center; align-items: center; margin-top: 30px; margin-bottom: 30px;}
+footer div { margin-right: 30px; color: #6867ac; font-size: small;}
+nav { display: flex; justify-content: center; align-items: center; text-align: center;}
+nav a { background: lightgrey; width: 200px; height: 50px; line-height: 50px; margin-left: 5px; text-transform: uppercase; font-weight: bold;}
+footer .name{background: lightgrey; width: 100px; height: 50px; text-align: center; line-height: 50px; border-radius: 5em; padding-left: 10px; padding-right: 10px;}
+  
+  @font-face {
     font-family: 'jamsil';
     src: url('/07/c02/fonts/The\ Jamsil\ 6\ ExtraBold.ttf');
     font-weight: 800;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'jamsil';
     src: url('/07/c02/fonts/The\ Jamsil\ 5\ Bold.ttf');
     font-weight: 700;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'jamsil';
     src: url('/07/c02/fonts/The\ Jamsil\ 4\ Medium.ttf');
     font-weight: 500;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'jamsil';
     src: url('/07/c02/fonts/The\ Jamsil\ 3\ Regular.ttf');
     font-weight: 400;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'jamsil';
     src: url('/07/c02/fonts/The\ Jamsil\ 2\ Light.ttf');
     font-weight: 300;
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'jamsil';
     src: url('/07/c02/fonts/The\ Jamsil\ 1\ Thin.ttf');
     font-weight: 100;
-}
+  }
+  
