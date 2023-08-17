@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0;}
+.wrap{width: 100%; max-width: 800px; margin: auto;}
+body{font-size: 200%; font-weight: bold; color: white;  background: lightgreen;}
+header{width: 100%; max-width: 800px; height: 200px; background: darkgreen; display: flex; flex-flow: column;}
+main{width: 100%; max-width: 800px; height: 600px; background: rgb(17, 156, 17); display: flex;}
+footer{width: 100%; max-width: 800px; height: 100px; background: rgb(96, 205, 96);}
+header nav{height: 100px; background: rgb(12, 119, 12);}
+header h1{height: 100px;}
+main .side{width: 250px; background: rgb(18, 137, 18);}

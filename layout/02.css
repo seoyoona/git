@@ -1,0 +1,10 @@
+body{background: lightblue; font-weight: bold; font-size: 200%; color: white;}
+.wrap{width: 100%; max-width: 800px; margin: auto;}
+header{height: 200px; display: flex; flex-flow: column;}
+main{height: 600px; display: flex;}
+footer{height: 100px; background: rgb(149, 187, 200);}
+header h1{height: 100px; background: rgb(139, 175, 187);}
+header nav{height: 100px; background: rgb(96, 138, 152);}
+main .side-left{width: 100%; max-width: calc(800px /3); background: rgb(94, 120, 129);}
+main .contents{width: 100%; max-width: calc(800px /3); background: rgb(59, 85, 93);}
+main .side_right{width: 100%; max-width: calc(800px /3); background: rgb(35, 66, 77);}

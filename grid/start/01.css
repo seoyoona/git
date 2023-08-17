@@ -1,0 +1,7 @@
+#wrapper{display: grid; display: inline-grid; grid-template-columns: 200px 200px 200px; grid-template-rows: 100px 100px;}
+/* display : inline-grid = 컨테이느 내의 요소 인라인레벨로 배치 */
+/* display : grid = 컨테이너 내의 요소를 블록레벨로 배치 */
+
+/* franction 분수 : 비율로 지정 */
+#wrapper{grid-template-columns: 1fr 2fr 1fr; grid-template-columns: repeat(3,1fr);} /* 1:2:1 */
+#wrapper{display: grid; display: inline-grid; grid-template-columns: repeat(3,200px); grid-template-rows: repeat(2,300px);}

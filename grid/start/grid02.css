@@ -1,0 +1,6 @@
+#wrapper{width: 700px; display: grid; grid-template-columns: repeat(3,1fr) ; grid-template-rows: repeat(3,100px);}
+.box{padding: 15px; color: white; font-size: 200%; font-weight: bold; text-align: center;}
+.box1{background: lightcoral; grid-column: 1/4;}
+.box2{background: lightseagreen; grid-row: 2/4;}
+.box3{background: lightblue;grid-column: 2/4;}
+.box4{background: lightsalmon; grid-column: 3/4;}

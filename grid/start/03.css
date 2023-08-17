@@ -1,0 +1,4 @@
+#wrapper{display: grid; grid-template-columns: repeat(3,200px); grid-template-rows: minmax(100px,auto); grid-column-gap: 30px; grid-row-gap: 20px; grid-gap: 20px, 30px;}
+/* 컬럼 간격 (행 간격) : grid-column-gap */
+/* 로우 간격 (열 간격) : grid-row-gap */
+/* 축약 = grid-gap : row,column */

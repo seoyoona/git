@@ -1,0 +1,12 @@
+html{font-size: 62.5%;}
+/* 반응형 포트 16px = 16px을 10px로 맞춤 */
+/* 1rem = 16px이므로 계산 어려움 -> 최상위 요소 기본 폰트 10px로 지정하는 팁 */
+body{font-size: 1.25em; font-weight: 400; line-height:1.6; color: #222;}
+h1{border-bottom: 1px solid #ccc;}
+img{max-width: 100%; border-radius: 10px;}
+.container{max-width: 1200px; margin: auto;}
+.gallery{display: flex; flex-flow: row wrap; align-items: stretch;}
+.image{border-radius: 10px; background: #333; padding: 10px; margin: 5px; flex: 1 1 300px; display: flex; flex-flow: column wrap; justify-content: flex-end;}
+/* grow : 공간 남을 때 (몇 배로 늘릴지) / shrink : 공간 부족할 때 (몇 배로 줄일지) / basis : 기본크기 */
+.image figcaption{color: white; font-weight: bold; font-size: 130%; padding-left: 10px; margin-top: 10px; border-top: 1px solid rgba(255,255,255,.5);}
+.image.wide{flex: 2 2 400px;}

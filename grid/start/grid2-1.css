@@ -1,0 +1,7 @@
+#wrapper{display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3,100px);
+    grid-template-areas: "box1 box1 box1" "box2 box3 box3" "box2 . box4";}
+.box{color: white; font-weight: bold; font-size: 200%; text-align: center;}
+.box1{background: lightcoral; grid-area: box1; line-height: 100px;}
+.box2{background: lightseagreen; grid-area: box2; line-height: 200px;}
+.box3{background: lightblue; grid-area: box3; line-height: 100px;}
+.box4{background: lightsalmon; grid-area: box4; line-height: 100px;}

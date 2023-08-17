@@ -1,0 +1,1 @@
+#wrapper{display: grid; width: 600px; grid-template-columns: repeat(3,1fr); grid-template-rows: repeat(2,100px); grid-template-rows: minmax(100px,150px); grid-template-rows: repeat(2,1fr) minmax(100px,200px);}
