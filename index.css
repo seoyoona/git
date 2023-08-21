@@ -11,7 +11,7 @@ ul { list-style: none; line-height: 170%; }
 .diary,.devoirs,.self { display: flex; justify-content: center; align-items: center; } 
 .container { padding: 10px; display: flex; justify-content: center; align-items: center; flex-direction: column; } 
 .container ul { padding: 30px; border: 2px solid lightcoral; min-width: 170px; } 
-.diary ul,.self ul { height: 350px; } 
+.diary ul,.self ul { height: 350px;} 
 .devoirs ul { min-height: 400px; } 
 nav { display: flex; justify-content: center; align-items: center; } 
 nav ul li { display: inline-block; position: relative; } 
