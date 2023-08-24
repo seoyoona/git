@@ -1,3 +1,3 @@
-*{margin: 0; padding: 0; justify-content: center;}
+*{margin: 0; padding: 0; justify-content: center; box-sizing: border-box;}
 .wrap{margin: auto;}
 :root{--gray1:#F6F4F4;--gray2:#D9D9D9;--gray3:#CACACA;--gray4:#BABABA;--gray5:#ADADAD;--gray6:#979797;}

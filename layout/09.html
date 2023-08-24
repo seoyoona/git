@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full-size</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        html,body{height: 100%;}
+        /* header,footer */
+        header,footer{height: 50px ; line-height: 50px; background: #bbb; text-align: center;} /* 컨텐츠 있을 땐 height, line-height 없애야함 */
+        /* main, nav */
+        main{height: calc(100% - 100px); margin: 0 auto; background: var(--primary); display: flex; flex-wrap: wrap; justify-content: space-between;}
+        nav{width: 100vw; background: #444; color: #fff; padding: 10px; }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <main>
+        <section>section</section>
+        <aside>aside</aside>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
