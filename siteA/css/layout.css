@@ -3,19 +3,19 @@
 
 /* header */
 header {width: 100%;max-width: 200px;height: 850px; }
-  header .logo {margin-top: 4rem;width: 200px;height: 40px;line-height: 4rem;text-align: center; }
-  header .logo a {color: var(--primary); }
-  header nav {margin-top:2rem;}
-  header nav ul.depth1 li{position: relative;}
-  header nav ul.depth1 li:not(:last-child){margin-bottom:1rem;}
-  header nav ul li a{display: block; padding-left: 4rem; color:var(--text1); transition:all 300ms; width:20rem; height:4.8rem; line-height: 4.8rem;}
-  header nav ul li:hover>a{color:var(--background); background:var(--secondary);}
-  header nav ul.depth2{position:absolute; top:0; right:-600px; width:600px; display: none;}
-  header nav ul.depth2 li{display: inline-block; width: 15%; height: 100%;}
-  header nav ul.depth2 li a{display: block;}
+header .logo {margin-top: 4rem;width: 200px;height: 40px;line-height: 4rem;text-align: center; }
+header .logo a {color: var(--primary); }
+header nav {margin-top:2rem;}
+header nav ul.depth1 li{position: relative;}
+header nav ul.depth1 li:not(:last-child){margin-bottom:1rem;}
+header nav ul li a{display: block; padding-left: 4rem; color:var(--text1); transition:all 300ms; width:20rem; height:4.8rem; line-height: 4.8rem;}
+header nav ul li:hover>a{color:var(--background); background:var(--secondary);}
+header nav ul.depth2{position:absolute; top:0; right:-600px; width:600px; display: none; z-index: 999999999; }
+header nav ul.depth2 li{display: inline-block; width: 15%; height: 100%;}
+header nav ul.depth2 li a{display: block;}
 
-  header:before{content:''; display:block; position:absolute; width:0%; height: 30rem; background:#ffffff8a; left:200px; top:9rem; transition:all 0.3s;}
-  header.on:before{width:100%;}
+header:before{content:''; display:block; position:absolute; width: 0%; height: 30rem; background:#ffffff71; left:200px; top:9rem; transition:all 0.3s; z-index: 99999999; backdrop-filter: blur(10px);}
+header.on:before{width: 40%;}
 
 .spotmenu{margin-top:9.8rem; padding:1.1rem 2.5rem; display: flex; justify-content: space-around;}
 .spotmenu a{display: block; color:var(--primary);}
