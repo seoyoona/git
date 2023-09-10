@@ -44,4 +44,11 @@ nav .gnb_bg{position: absolute; background: #fbfbfb; top: 9.4rem; left: 0; width
 /* main */
 main{}
 main .main_banner{height: 100vh; background: url('https://plus.unsplash.com/premium_photo-1682308257863-99012bacaec8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1992&q=80') no-repeat; background-size: cover; position: relative;}
-.main_banner ul{display: flex; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); position: absolute;}
+.main_banner ul{display: flex; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); position: absolute; gap: 1rem;}
+/* flex : flex-growㅣflex-shrinkㅣflex-basis */
+.main_banner ul li{position: relative; flex: 1 1 30%; height: 200px; background: rgba(255,255,255,.5); color: #fff; text-align: center; font-size: 4em; line-height: 200px; transition: margin .5s; padding: 0 60px;}
+.main_banner li:hover{margin-top: -10px;}
+.main_banner li:after{content: 'o'; position: absolute; left: 165px; top: 87px; opacity: 0; transition: all .5s;}
+.main_banner li:hover:after{opacity: 1; }
+.main_banner li:before{content: ''; position: absolute; width: 0%; height: 8px; background: #e95a65; left: 50%; bottom: 0; transform: translateX(-50%); transition: width .5s;}
+.main_banner li:hover:before{width: 100%;}

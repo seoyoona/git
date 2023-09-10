@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+/* 960px */
+#wrap{width: 90%; height: 500px; margin: auto; border: 4px solid #333;}
+/* 가변너비 */
+#wrap div{width: 300px; width: 31.25%; display: inline-block;}
+/* 좌우패딩 */
+#wrap  div:first-child{background: lightsteelblue; padding: 50px 5.2%;}
+/* 좌우패딩 */
+#wrap div:first-child+div{background: lightcoral; padding: 130px 13%;}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

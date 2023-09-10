@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p>첫 번째 단락</p>
+    </div>
+    <script>
+        // 기존의 요소 선택
+        const container = document.getElementById('container');
+
+        // 새로운 노드 생성 및 추가
+        container.innerHTML += '<p>두 번째 단락</p>';
+    </script>
+    <script>
+        let list=''
+        console.log(list);
+        list +='<ul>'
+        list +='<li>Javascript</li>';
+        list+='</ul>'
+        document.write(list)
+    </script>
+</body>
+</html>

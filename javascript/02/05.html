@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술 연산자</title>
+</head>
+<body>
+    <script>
+        console.log(100+200); // 덧셈
+        console.log(200-80); // 뺄셈
+        console.log(100*3); // 곱셈
+        console.log(100/4); // 나눗셈
+        console.log(402%5); // 나머지 계산
+        console.log(4**2); // 제곱
+        console.log(2**3); // 3제곱
+
+        var t1="복순이는"; // string
+        var t2=9; // number
+        var t3="살";
+        var t6=true; // b
+        var t4=t1+t2; // s+n = s
+        // t4=t2+t2; // n+n = n
+        t4=t1+t3; // s+s = s
+        t4=t1+t6; // s+b = s
+        // String(), Number() = 앞에 대문자면 형식 변환해줌
+        document.write(`<h1>${t4}-${typeof t4}</h1>`)
+    </script>
+</body>
+</html>
