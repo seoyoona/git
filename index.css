@@ -9,7 +9,7 @@ h2 { background: rgba(211,211,211,.7); width: 250px; height: 50px; text-align: c
 h3 { color: #a1405c; padding-bottom: 20px; text-align: center; font-family: 'jamsil'; font-weight: 700; } 
 ul { list-style: none; line-height: 170%; } 
 .diary,.devoirs,.self { display: flex; justify-content: center; align-items: center; } 
-.container { padding: 10px; display: flex; justify-content: center; align-items: center; flex-direction: column; } 
+.container { padding: 10px; display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap;} 
 .container ul { padding: 30px; border: 2px solid lightcoral; min-width: 170px; } 
 .diary ul,.self ul { height: 350px;} 
 .devoirs ul { min-height: 400px; } 
